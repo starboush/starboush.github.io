@@ -81,6 +81,24 @@
     height: 100%;
     color: #fff;
 }
+.body{
+    width: 70%;
+    height: 400px;
+    margin:140px 30px 30px 70px;
+    border: 1px solid darkgrey;
+    transform: skew(0deg, 5deg);
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+.body .userphoto{
+    width: 35%;
+    float: left;
+}
+.body .userphoto img{
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
 @media screen and (max-width: 480px) {
   body {
     background-color: lightgreen;
