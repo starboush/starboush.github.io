@@ -17,7 +17,7 @@
                 <div class="logo">
                     <h2>Starboush</h2>
                 </div>
-                <nav>
+                <nav class="headernav">
                     <ul>
                         <li ><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -69,6 +69,7 @@
             $(document).ready(function () {
                     $('.menu-toggle').click(function () {
                         $('header .upperheader .logo').toggleClass('active');
+                        $('header .hero').slideToggle();
                     })
                 })
     </script>
