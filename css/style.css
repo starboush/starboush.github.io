@@ -152,6 +152,7 @@ header .upperheader .headernav ul li a:hover{
         background-image: url('../images/fabian-grohs-550489-unsplash.jpg');
         background-size: cover;
         background-attachment: fixed;
+        background-position: top right
     }
     header .upperheader{
         width: 100%;
