@@ -152,7 +152,7 @@ header .upperheader nav ul li a:hover{
         background-image: url('../images/fabian-grohs-550489-unsplash.jpg');
         background-size: cover;
         background-attachment: fixed;
-        background-position: top right
+        background-position: top right;
     }
     header .upperheader{
         position: relative;
@@ -164,8 +164,13 @@ header .upperheader nav ul li a:hover{
         color: #ddd;
         text-transform: uppercase;
         text-align: center;
-        text-shadow: 0 0 4px rgba(0, 255, 255, 0.5)
+        text-shadow: 0 0 4px rgba(0, 255, 255, 0.5);
+        transition: 0.5s;
     }
+    header .upperheader .logo.active{
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
     header .upperheader nav{
         position: absolute;        
         width: 100%;
