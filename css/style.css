@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Thasadith');
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 400px) {
     *{
     margin: 0;
     padding: 0;
@@ -96,7 +96,7 @@
         line-height: 1.5;
         font-size: 13px;
         letter-spacing: 1px;
-        margin-bottom: 140px;
+        margin-bottom: 120px;
     }
     header .hero a{
         text-decoration: none;
