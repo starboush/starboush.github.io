@@ -17,9 +17,9 @@
                 <div class="logo">
                     <h2>Starboush</h2>
                 </div>
-                <nav class="headernav">
+                <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li ><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">mywork</a></li>
                         <li><a href="#">skills</a></li>
@@ -58,6 +58,14 @@
     <section class="mywork">
 
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+                $('.menu-toggle').click(function () {
+                    $('header .upperheader nav').toggleClass('active');
+                })
+            })
+    </script>
 </body>
 </html>

@@ -125,7 +125,7 @@ header .hero a{
     background-attachment: fixed;
     background-size: cover;
 }*/
-header .upperheader .headernav ul li a{
+header .upperheader nav ul li a{
     text-decoration: none;
     color: #eee;
     font-size: 17px;
@@ -133,7 +133,7 @@ header .upperheader .headernav ul li a{
     padding :3px;
     text-shadow: 0 0 4px rgba(0, 255, 255, 0.5);
 }
-header .upperheader .headernav ul li a:hover{
+header .upperheader nav ul li a:hover{
     color: #fff;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
@@ -155,6 +155,7 @@ header .upperheader .headernav ul li a:hover{
         background-position: top right
     }
     header .upperheader{
+        position: relative;
         width: 100%;
     }
     header .upperheader .logo{
@@ -165,16 +166,18 @@ header .upperheader .headernav ul li a:hover{
         text-align: center;
         text-shadow: 0 0 4px rgba(0, 255, 255, 0.5)
     }
-    header .upperheader .headernav{
-        width: 100%;
-    }
-    header .upperheader .headernav ul{
+    header .upperheader nav{
         position: absolute;        
         width: 100%;
         height: 542px;
         background-color: rgba(0, 0, 0, 0.9);
+        left: -100%;
+        transition: 0.5s;
     }
-    header .upperheader .headernav ul li{
+    header .upperheader nav.active{
+        left: 0;
+    }
+    header .upperheader nav ul li{
         width: 100%;
         display: block;
         text-align: center;
@@ -183,7 +186,7 @@ header .upperheader .headernav ul li a:hover{
         top: 25%;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
-    header .upperheader .headernav ul li:last-of-type{
+    header .upperheader nav ul li:last-of-type{
         border-bottom: none;
     }
     header .upperheader .menu-toggle{
