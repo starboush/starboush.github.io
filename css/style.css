@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Thasadith');
-*{
+/**{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -124,16 +124,60 @@ header .hero a{
     background-image: url('../images/simon-abrams-286276-unsplash.jpg');
     background-attachment: fixed;
     background-size: cover;
+}*/
+header .upperheader .headernav ul li a{
+    text-decoration: none;
+    color: #eee;
+    font-size: 17px;
+    text-transform: capitalize;
+    padding :3px;
+    text-shadow: 0 0 4px rgba(0, 255, 255, 0.5);
+}
+header .upperheader .headernav ul li a:hover{
+    color: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 480px) {
-  body {
-    background-color: lightgreen;
-  }
-  header{
-      width: 100%;
-  }
-  .infoheader{
-      width: 100%;
-     /* background-color: blue;*/
-  }
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+    header{
+        width: 100%;
+        height: 600px;
+        background-image: url('../images/fabian-grohs-550489-unsplash.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    header .upperheader{
+        width: 100%;
+    }
+    header .upperheader .logo{
+        width: 100%;
+        padding: 15px;
+        color: #ddd;
+        text-transform: uppercase;
+        text-align: center;
+        text-shadow: 0 0 4px rgba(0, 255, 255, 0.5)
+    }
+    header .upperheader .headernav{
+        width: 100%;
+    }
+    header .upperheader .headernav ul{
+        width: 100%;
+        height: 600px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    header .upperheader .headernav ul li{
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 15px;
+        position: relative;
+        top: 25%;
+    }
 }
