@@ -181,6 +181,10 @@ header .upperheader .headernav ul li a:hover{
         padding: 15px;
         position: relative;
         top: 25%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    header .upperheader .headernav ul li:last-of-type{
+        border-bottom: none;
     }
     header .upperheader .menu-toggle{
         display: block;
