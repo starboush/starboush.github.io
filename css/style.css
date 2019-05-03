@@ -1,8 +1,55 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Thasadith');
 
-
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 421px) and (max-width: 768px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        background-color: transparent;
+    }
+    header{
+        width: 100%;
+        height: 600px;
+        background-image: url('../images/blake-connally-373084-unsplash.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: top right;
+    }
+    header .upperheader{
+        position: relative;
+        width: 100%;
+        height: 80px;
+    }
+    header .upperheader .logo{
+        width: 100%;
+        padding: 15px;
+        color: #ddd;
+        text-transform: uppercase;
+        text-align: center;
+        text-shadow: 0 0 4px rgba(0, 255, 255, 0.5);
+        transition: 0.5s;
+    }
+    header .upperheader nav.headernav{
+        text-align: center;
+        width: 100%;
+    }
+    header .upperheader nav.headernav ul{
+        list-style-type: none;
+        width: 100%;
+    }
+    header .upperheader nav.headernav ul li{
+        display: inline-block;
+        padding: 10px;
+    }
+    header .upperheader nav.headernav ul li a{
+        text-decoration: none;
+    }
+}
+@media screen and (max-width: 420px) {
     *{
     margin: 0;
     padding: 0;
@@ -10,7 +57,7 @@
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-}
+    }
     header{
         width: 100%;
         height: 600px;
@@ -54,7 +101,6 @@
         padding: 15px;
         position: relative;
         top: 25%;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
     header .upperheader nav ul li:last-of-type{
         border-bottom: none;
@@ -84,13 +130,15 @@
         position: relative;
         top: 20%;
         text-align: center;
-        color: darkgray;
-        text-shadow: 0 0 4px rgba(0, 255, 255, 0.5);
+        color: #ecf0f1;
     }
     header .hero h1{
-        text-transform: uppercase;
-        line-height: 1.5;
-        font-size: 22px;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+    }
+    header .hero h1 span{
+        display: block;
+        color: #DBCA40;
     }
     header .hero p{
         line-height: 1.5;
@@ -101,15 +149,16 @@
     header .hero a{
         text-decoration: none;
         position: relative;
-        color: darkgrey;
+        color: #ecf0f1;
         display: block;
         width: 90%;
-        border: 1px solid darkgrey;
-        box-shadow: 0 0 4px rgba(0, 255, 255, 0.5);
+        border: 1px solid #ecf0f1;
+        box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
         left: 5%;
         margin-top: 15px;
         padding: 15px 0;
         font-size: 18px;
         text-transform: capitalize;
+        border-radius: 5px;
     }
 }

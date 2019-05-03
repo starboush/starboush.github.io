@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+        *{
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+        body{
+            background-color: #123;
+        }
+        .container{
+            position: relative;
+            height: 50px;
+            width: 200px;
+            margin: 100px auto;
+        }
+        .container span{
+            display: block;
+            position: absolute;
+            background-color: blue;
+            bottom: 0;
+            height: 5px;
+            width: 15px;
+            animation: swing 1s infinite ease-in-out;
+        }
+        .container span:nth-of-type(2){
+            left: 17px;
+            animation-delay: 0.2s;
+        }
+        .container span:nth-of-type(3){
+            left: 34px;
+            animation-delay: 0.4s;
+        }
+        .container span:nth-of-type(4){
+            left: 51px;
+            animation-delay: 0.6s;
+        }
+        .container span:nth-of-type(5){
+            left: 68px;
+            animation-delay: 0.8s;
+        }
+        .snake{
+            position: relative;
+            height: 50px;
+            width: 200px;
+            margin: 100px auto;
+        }
+        .snake span{
+            display: block;
+            position: absolute;
+            background-color: blue;
+            bottom: 0;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            animation: wave 1s infinite ease-in-out;
+        }
+        .snake span:nth-of-type(2){
+            left: 17px;
+            animation-delay: 0.2s;
+        }
+        .snake span:nth-of-type(3){
+            left: 34px;
+            animation-delay: 0.4s;
+        }
+        .snake span:nth-of-type(4){
+            left: 51px;
+            animation-delay: 0.6s;
+        }
+        .snake span:nth-of-type(5){
+            left: 68px;
+            animation-delay: 0.8s;
+        }
+        .social{
+            width: 200px;
+            height: 50px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: #fff;
+            float: left;
+        }
+        .social .box{
+            height: 100%;
+            width: 100%;
+            position: relative;
+            line-height: 50px;
+            font-size: 40px;
+            background-color: rgb(197, 43, 76);
+            z-index: 2;
+            
+        }
+        .social::before{
+            display: block;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .social a{
+            display: inline-block;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            background-color: #000;
+            color: rgb(222, 247, 113);
+            text-decoration: none;
+            position: relative;
+            top: -50px;
+            z-index: 1;
+           transition: all 0.5s ease-in-out;
+        }
+        .social:hover a{
+            top: 0;
+            transform-origin: top;
+            animation: shake 1.5s ease-in-out;
+        }
+        
+        @keyframes swing{
+            0%, 50%, 100%{
+                height: 5px;
+                transform: translateY(0);
+                background-color: blueviolet;
+            }
+            25%{
+                height: 70px;
+                transform: translateY(15px)
+            }
+        }
+        @keyframes shake{
+            0%{
+                transform: rotateX(-50deg);
+            }
+            20%{
+                transform: rotateX(50deg);
+            }
+            40%{
+                transform: rotateX(-30deg);
+            }
+            60%{
+                transform: rotateX(30deg);
+            }
+            80%{
+                transform: rotateX(-30deg);
+            }
+            100%{
+                transform: rotateX(0deg);
+            }
+        }
+        @keyframes wave{
+           0%{
+               opacity: 0.3;
+               transform: translateY(0);
+               box-shadow: 0 0 3px rgba(255, 255, 255, 0.1);
+           }
+           50%{
+               opacity: 1;
+               transform: translateY(-15px);
+               box-shadow: 0 20px 3px rgba(177, 148, 255, 0.05);
+           }
+           100%{
+               opacity: 0.3;
+               transform: translateY(0);
+               box-shadow: 0 0px 3px rgba(255, 255, 255, 0.1);
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="social">
+        <div class="box"><i class="fab fa-youtube"></i></div>
+        <a href="#">Starboush</a>
+    </div>
+    <div class="snake">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
+</html>

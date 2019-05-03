@@ -4,74 +4,263 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Starboush</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            perspective: 600px;
+            font-family: Arial;
+        }
+        .hero_image{
+            position: relative;
+            background: url('../images/jaanus-jagomagi-1489986-unsplash.jpg') no-repeat center;
+            background-size: cover;
+            height: 632px;
+        }
+        .hero_text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -57%);
+            color: #fff;
+           text-align: center;
+        }
+        .hero_text h1, 
+        .hero_text h3{
+            margin-bottom: 30px;
+            font-size: 30px;
+            box-shadow: 4px 4px 14 rgba(255, 52, 255, 0.7);
+             letter-spacing: 3px;
+        }
+        .hero_text h1{
+            font-family: 'ZCOOL KuaiLe', cursive;
+            color: rgba(0, 181, 204, 1);
+            font-size: 2.5em;
+            resize: both;
+        }
+        button{
+            position: relative;
+            outline: none;
+            background-color: transparent;
+            padding: 2% 1%;
+            width: 80%;
+            height: 15%;
+            color: #fff;
+            font-size: 2em;
+            text-align: center;
+            transition: all 0.5s;
+            animation: moving .5s 3 linear;
+                -webkit-animation: moving .5s 3 linear;
+                -moz-animation: moving 1s 10 linear;
+            
+        }
+        button span{
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        button span::after{
+            content: "\00bb";
+            position: absolute;
+            opacity: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        button:hover span{
+            padding-right: 25px;
+        }
+        button:hover span::after{
+            opacity: 1;
+            right: 0;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .row aside{
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        .row section{
+            flex: 70%;
+            padding: 20px;
+        }
+        .fakeimg{
+            width: 100%;
+            background-color: #1aaa23;
+            padding: 20px;
+        }
+        @media screen and (max-width: 700px) {
+            .row, .navbar {   
+                flex-direction: column;
+            }
+            }
+            .test{
+                height: 60px;
+                width: 100%;
+                background-color: #123;
+                display: flex;
+            }
+            .test .left{
+                display: flex;
+                flex: 20%;
+                justify-content: center;
+                padding: 10px;
+                color: #f1f1f1;                
+            }
+            .test .right{
+                display: flex;
+                flex: 80%;
+                color: #fff;
+                justify-content: flex-end;
+                padding: 20px;
+            }
+            .test .right span{
+                margin: 10px;
+            }
+            .animation{
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                background-color: #1aaa23;
+                
+            }
+            @keyframes moving{
+                0%{
+                    top: 0;
+                    left: 0;
+                    
+                }
+                25%{
+                    top: 0px;
+                    left: 20px;
+                }
+                50%{
+                    top: 0px;
+                    left: -20px;
+                }
+                75%{
+                    top: 0px;
+                    left: 20px;
+                }
+                100%{
+                    top: 0px;
+                    left: 0px;
+                }
+            }
+            @-moz-keyframes moving{
+                0%{
+                    top: 0;
+                    left: 0;
+                    
+                }
+                25%{
+                    top: 0px;
+                    left: 200px;
+                    border-radius: 25%;
+                }
+                50%{
+                    top: 200px;
+                    left: 200px;
+                    border-radius: 50%;
+                }
+                75%{
+                    top: 200px;
+                    left: 0px;
+                }
+                100%{
+                    top: 0px;
+                    left: 0px;
+                }
+            }
+            @-webkit-keyframes moving{
+                0%{
+                    top: 0;
+                    left: 0;
+                    
+                }
+                25%{
+                    top: 0px;
+                    left: 200px;
+                    border-radius: 25%;
+                }
+                50%{
+                    top: 200px;
+                    left: 200px;
+                    border-radius: 50%;
+                }
+                75%{
+                    top: 200px;
+                    left: 0px;
+                }
+                100%{
+                    top: 0px;
+                    left: 0px;
+                }
+            }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="upperheader">
-            <div class="container">
-                <div class="logo">
-                    <h2>Starboush</h2>
-                </div>
-                <nav class="headernav">
-                    <ul>
-                        <li ><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">mywork</a></li>
-                        <li><a href="#">skills</a></li>
-                        <li><a href="#">contact</a></li>
-                    </ul>
-                </nav>
+    <div class="hero_image">
+        <div class="hero_text">
+            <h1>STARBOUSH</h1>
+            <h3>I'm a Programmer</h3>
+            <button><span>Learn More</span></button>
+        </div>
+    </div>
+   <!--<div class="row">
+        <aside>
+            <h1>About Me</h1>
+            <h5>Photo of me</h5>
+            <div class="fakeimg" style="height:200px;"></div>
+            <p>asdjkasjdj kjsadjaskdh asjkd k jsjkadhshjkdasdhjksakhjdskjadskaj dh</p>
+            <h3>More text</h3>
+            <p>asdjnasjd jsndasjkn djnkansd jnjkasd</p>
+            <div class="fakeimg" style="height: 60px"></div>
+            <div class="fakeimg" style="height: 60px"></div>
+            <div class="fakeimg" style="height: 60px"></div>
+        </aside>
+        <section>
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <br>
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Sep 2, 2017</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
             </div>
-            <div class="menu-toggle">
-                <i class="fas fa-bars" aria-hidden="true"></i>
+        </section>
+    </div>
+    <div class="test">
+        <div class="left">
+            <div class="logo"><h1>Starboush</h1></div>
+        </div>
+        <div class="right">
+            <div class="menu">
+                <span><i class="far fa-address-card"></i></span>
+                <span><i class="fas fa-archive"></i></span>
+                <span><i class="fas fa-cogs"></i></span>
             </div>
         </div>
-        <div class="hero">
-            <div class="container">
-                <h1>html5 portfolio templates</h1>
-                <p>i am professional web designer. graphic designer and a programmer</p>
-                <a href="#">download resume</a>
-                <a href="#">see my portfolio</a>
-            </div>
-        </div>
-    </header>
-    <section class="body">
-        <div class="userphoto">
-           <!-- <img src="images/user.jpg" alt="myphoto">-->
-        </div>
-        <div class="userinfo">
-                <div class="name">
-                    <h3>Full name</h3>
-                    <span><b>:</b></span>
-                    <h3>suhaib doraid abu tarboush</h3>
-                </div>
-                <div class="dob">
-                    <h4>date of birth</h4>
-                </div>
-        </div>
-    </section>
-    <section class="mywork">
-
-    </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </div>-->
+    <!--<img id="images" src="images/elle-fanning-featured-1024x1024.jpg" width="300" height="300" alt="" srcset="">-->
+    <div class="animation">
+        
+    </div>
     <script src="js/main.js"></script>
-    <script>
-        $(document).ready(function () {
-                $('.menu-toggle').click(function () {
-                    $('header .upperheader nav').toggleClass('active');
-                })
-            })
-            $(document).ready(function () {
-                    $('.menu-toggle').click(function () {
-                        $('header .upperheader .logo').toggleClass('active');
-                        $('header .hero').slideToggle();
-                    })
-                })
-    </script>
 </body>
 </html>
