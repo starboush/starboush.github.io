@@ -10,6 +10,9 @@
         padding: 10px 15px;
         text-transform: uppercase;
         font-size: 17px;
+        @media #{$maxMobile} {
+            width: 280px;
+        }
         &::before{
             content: '';
             width: 100%;
@@ -19,6 +22,9 @@
             left: 0%;
             top: 50%;
             z-index: -1;
+            @media #{$maxMobile} {
+                display: none;
+            }
         }
     }
 }

@@ -9,10 +9,10 @@
     @media #{$minScreen} {
         width: 750px;
     }
-    @media #{medScreen} {
+    @media #{$medScreen} {
         width: 970px;
     }
-    @media #{lrgScreen} {
+    @media #{$lrgScreen} {
         width: 1170px;
     }
 }
