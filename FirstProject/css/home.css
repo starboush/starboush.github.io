@@ -49,6 +49,30 @@ ul, ol {
   .main-button:hover {
     background-color: #e2494c; }
 
+.toggle-button {
+  width: 50px;
+  height: 50px;
+  background-color: #e2494c;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  padding-left: 10px;
+  display: none;
+  position: absolute;
+  top: 9px;
+  right: 25px; }
+  @media (max-width: 767px) {
+    .toggle-button {
+      display: block; } }
+  .toggle-button span {
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    color: #fff;
+    width: 30px; }
+    .toggle-button span:not(:last-child) {
+      margin-bottom: 5px; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -67,41 +91,69 @@ ul, ol {
       width: 970px; } }
   @media lrgScreen {
     .container {
-      widows: 1170px; } }
+      width: 1170px; } }
 
 .clearfix {
   clear: both; }
+
+@media (max-width: 767px) {
+  .text-center-xs {
+    text-align: center; } }
 
 .header {
   padding: 20px 0;
   overflow: hidden;
   border-bottom: 1px solid #9c9c9c; }
-  @media (min-width: 768px) {
-    .header .logo {
-      width: 30%;
-      float: left;
-      text-align: center; } }
-  @media (min-width: 992px) {
-    .header .logo {
-      width: 30%;
-      float: left;
-      text-align: left; } }
-  .header .logo h1 {
-    margin-top: 10px;
-    margin-bottom: 0;
-    font-family: "Libre Baskerville", serif; }
-  .header .logo p {
-    font-style: italic; }
+  .header .logo {
+    position: relative; }
+    @media (min-width: 768px) {
+      .header .logo {
+        width: 100%;
+        float: none;
+        text-align: center; } }
+    @media (min-width: 992px) {
+      .header .logo {
+        width: 30%;
+        float: left;
+        text-align: left; } }
+    .header .logo h1 {
+      margin-top: 10px;
+      margin-bottom: 0;
+      font-family: "Libre Baskerville", serif; }
+    .header .logo p {
+      font-style: italic; }
   .header .navbar {
-    width: 70%;
-    float: left;
+    overflow: hidden;
     background-color: #e2494c;
     border-radius: 15px; }
+    @media (max-width: 767px) {
+      .header .navbar {
+        display: none; } }
+    @media (min-width: 768px) {
+      .header .navbar {
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin-top: 30px;
+        display: block !important; } }
+    @media (min-width: 992px) {
+      .header .navbar {
+        width: 70%;
+        float: left;
+        text-align: left;
+        margin-top: 1em; } }
     .header .navbar li {
       float: left;
       width: 20%;
       font-size: 18px;
       text-align: center; }
+      @media (max-width: 767px) {
+        .header .navbar li {
+          float: none;
+          display: block;
+          width: 100%; }
+          .header .navbar li:not(:last-child) {
+            border-bottom: 1px solid rgba(156, 156, 156, 0.3); } }
       .header .navbar li a {
         display: block;
         padding: 20px 10px;
@@ -138,24 +190,29 @@ ul, ol {
 
 /* End Slider Style*/
 /* Strat Services Style*/
-.service-box {
-  float: left;
-  width: 33.3333333333%;
-  padding: 0 15px; }
-  .service-box .service-title {
-    color: #555; }
-    .service-box .service-title span {
-      padding: 0 5px; }
-    .service-box .service-title i {
-      font-size: 30px;
-      position: relative;
-      top: 4px; }
-  .service-box .service-desc {
-    color: #777;
-    line-height: 1.5; }
-  .service-box .service-link {
-    color: #e2494c;
-    text-decoration: none; }
+@media (min-width: 992px) {
+  .services .service-box {
+    float: left;
+    width: 33.3333333333%;
+    padding: 0 15px; } }
+@media (max-width: 767px) {
+  .services .service-box i {
+    display: block;
+    margin-bottom: 15px; } }
+.services .service-box .service-title {
+  color: #555; }
+  .services .service-box .service-title span {
+    padding: 0 5px; }
+  .services .service-box .service-title i {
+    font-size: 30px;
+    position: relative;
+    top: 4px; }
+.services .service-box .service-desc {
+  color: #777;
+  line-height: 1.5; }
+.services .service-box .service-link {
+  color: #e2494c;
+  text-decoration: none; }
 
 /* End Services Style*/
 /* Strat Our Player Style*/

@@ -13,9 +13,14 @@
         width: 970px;
     }
     @media #{lrgScreen} {
-        widows: 1170px;
+        width: 1170px;
     }
 }
 .clearfix{
     clear: both;
+}
+.text-center-xs {
+    @media #{$maxMobile}{
+        text-align: center;
+    }
 }

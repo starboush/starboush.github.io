@@ -33,10 +33,19 @@
 /* End Slider Style*/
 
 /* Strat Services Style*/
-.service-box{    
-    float: $float-left;
-    width: (100% / 3);
-    padding: 0 15px;
+.services {
+    .service-box{    
+    @media #{$medScreen} {
+        float: $float-left;
+        width: (100% / 3);
+        padding: 0 15px;
+    }
+    @media #{$maxMobile} {
+       i{
+            display: block;
+            margin-bottom: 15px;
+       }
+    }
     .service-title{
         color: #555;
         span{
@@ -56,6 +65,7 @@
         color: $redColor;
         text-decoration: none;
     }
+}
 }
 
 
