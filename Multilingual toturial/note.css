@@ -1,0 +1,41 @@
+/*
+
+
+    ===================================
+    == Multilingual Notes and Tricks ==
+    ===================================
+    
+    * Problems and Solutions Part 1
+    --- Don't Start With Arabic Design.
+    --- Prgrammers Note: Don't Use Words Direct.
+    --- Padding and Margin For Parent Better Than Child.
+
+    * Problems and Solutions Part 2
+    --- Padding and margin Left + Right Better Than one Dirctions.
+    --- Don't Forget Page Direction Attribute. All Block Elements Depend On It.
+    --- Highlight Waht You Will Edit Soon.
+    --- Make The Direction Edits In The Same Time.
+
+    * Problems and Solutions Part 3
+    --- Don't Ever Forget Comments and Ordering of Elements.
+    --- Use Inline-Block Instead Of Float Fi You Don't Need Float.
+    --- RTL File is for Direction Only.
+    --- RTL File After Main File.
+
+    * Problems and Solutions Part 4
+    --- Consider Word Length When Specify Element Width.
+    --- Don't Destroy Nesting When Creating RTL File.
+    --- Don't Use Element That Need To Change Like Arrows., Use Pseudo Elements.
+
+    * Amazing Feature To Use
+    --- <bdi>
+    --- Attribute dir [ auto ]
+    --- Text-Align [Strat | End]
+    --- Float: [Inline-Start | Inline-End]
+
+    *Use Helper Classes
+    --- Use A Framework.
+    --- Float Classes [float-left | float-right]
+    --- Text Align [text-right | text-left]
+    --- Direction Classes [ltr-dir | rtl-dir]
+    */

@@ -1,0 +1,114 @@
+/* Start Slider Style*/
+.slider {
+    blockquote {
+        width: 80%;
+        margin: 30px auto;
+        font-weight: 600;
+        font-family: $libreFont;
+        text-align: center;
+        font-style: italic;
+        line-height: 1.7;
+    }
+    img {
+        max-width: 100%;
+    }
+    .bullets {
+        cursor: none;
+        text-align: center;
+        li{
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-color: $greyColor;
+            border-radius: 50%;
+            border: 3px solid $greyColor;
+            cursor: pointer;
+            &.active, &:hover{
+                background-color: #fff;
+                border: 3px solid #123;
+            }
+        }
+    }
+}
+/* End Slider Style*/
+
+/* Strat Services Style*/
+.service-box{    
+    float: $float-left;
+    width: (100% / 3);
+    padding: 0 15px;
+    .service-title{
+        color: #555;
+        span{
+            padding: 0 5px;
+        }
+        i{
+            font-size: 30px;
+            position: relative;
+            top: 4px;
+        }
+    }
+    .service-desc{
+        color: #777;
+        line-height: 1.5;
+    }
+    .service-link{
+        color: $redColor;
+        text-decoration: none;
+    }
+}
+
+
+/* End Services Style*/
+
+/* Strat Our Player Style*/
+.player-box{
+    float: $float-left;
+    width: (100% / 4);
+    font-size: 14px;
+    padding: 0 10px;
+    .player-img{
+        max-width: 100%;
+        height: 300px;
+        width: 300px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px #123;
+    }
+    .player-title{
+        color: #555;
+        font-weight: normal;
+        text-transform: capitalize;
+        span{
+            font-weight: bold;
+        }
+    }
+    .player-desc{
+        color: #777;
+        line-height: 1.5;
+    }
+    .player-link{
+        color: $redColor;
+        text-decoration: none;
+    }
+}
+
+/* End Our Player Style*/
+/* Strat Our Products Style */
+
+.product-box{
+    float: $float-left;
+    width: (94% / 3);
+    
+    &:not(:last-of-type){
+        margin-right: 3%;
+    }
+    img{
+        max-width: 100%;
+        width: 300px;
+        height: 200px;
+        background-size: cover;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px #123;
+    }
+}
+/* End Our Products Style*/

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Ranga&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*$mainColor : #f00;
+$fontColor: #f50;
+$backgroundColor:#eee;
+$mianMargin: 10px;
+$leftPadding :25px;
+$mainPadding: 10px;
+$paraColor: #123;
+$mainFont: 'Ranga', cursive;
+$subFont: 'Raleway', sans-serif;
+$hoverColor: yellowgreen;
+@import 'navbar.scss';
+@mixin bRadius ($raduis){
+    -webkit-border-radius: $raduis;
+    -moz-border-radius: $raduis;
+    -ms-border-radius: $raduis;
+    -o-border-radius: $raduis;
+    border-radius: $raduis; 
+}
+.class1{
+    color: $mainColor;
+    font-size: 40px;
+}
+.parent{
+    padding: $mainPadding;
+    background-color: $backgroundColor;
+    margin: $mianMargin;
+    &:hover{
+        background-color: aquamarine;
+    }
+    .class1{
+        color: $fontColor;
+        font-size: 40px;
+        padding: $mainPadding;
+        font-family: $mainFont;
+        
+    }
+    .class1 span::first-letter{
+        color: #123;
+    }
+    .class2{
+        @include bRadius(10px);
+        color: $mainColor;
+        padding: $mainPadding;
+        padding-left: $leftPadding * 2;
+        background-color: $paraColor;
+        font-family: $subFont;
+        line-height: 1.8;
+        text-shadow: 4px 4px 5px #f00;
+    }
+    .class3{
+        color: $fontColor;
+        font-size: 25px;
+        margin: $mianMargin;
+        padding: $mainPadding;
+        font-family: $mainFont;
+    }
+    .class4{
+        color: $mainColor;
+        padding: $mainPadding;
+        padding-left: $mainPadding;
+        background-color: $paraColor;
+        font-family: $subFont;
+    }
+    .class5{
+        @extend %cover;
+        width: 100%;
+        height: 500px;
+        background-image: url('../images/Elle_Fanning-3-homepage-1280x720.jpg');
+    }
+}
+/*extended classes*/
+/*%cover{
+        -webkit-backgound-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+}
+*/
+$numOfGrid : 12;
+$socialList: facebook twitter linkedin instagram;
+
+@for $i from 1 through $numOfGrid {
+    .col-#{$i} {
+        width: (100% / ($numOfGrid / $i));
+        @extend %gridele;
+    }
+}
+@each $social, $color, $bgColor in (facebook,  red, black),
+(twitter, blue, green) {
+    .#{$social}{
+        background-image: url('../images/#{$social}.jpg');
+        color: $color;
+        background-color: $bgColor
+    }
+}
+%gridele{
+    float: left;
+    padding: 10px;
+    background-color: #aaa;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-weight: bold;
+}

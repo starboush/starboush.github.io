@@ -1,0 +1,33 @@
+@mixin miniScreen {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+/*Mixin rgba overlay*/
+@mixin overlay {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+/* added Prefixer*/
+@mixin prefixer($property, $value, $prefixes: ()) {
+    @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $property }: $value;
+    }
+    #{$property}: $value
+}
+@mixin keyFrame($Animation-Name) {
+    @-webkit-keyframes #{$Animation-Name} {
+        @content;
+    }
+    @-moz-keyframes #{$Animation-Name} {
+        @content;
+    }
+    @keyframes #{$Animation-Name} {
+        @content;
+    }
+}

@@ -1,0 +1,229 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.banner{
+    background-image: url('../images/jaanus-jagomagi-1489986-unsplash.jpg');
+    width: 100%;
+    background-size: cover;
+}
+.top-bar{
+    background-color: #000;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.top-bar .logo{
+    color: #fff;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 40px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.top-bar .menu{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    flex: 1;
+}
+.top-bar .menu ul{
+    display: -moz-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+.top-bar .menu ul li{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    flex: 1;
+    text-align: center;
+}
+.top-bar .menu ul li a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+.banner .banner-text {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15% 0;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    color: #fff;
+}
+.banner .banner-text .banner-text-items h2{
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.banner .banner-text .banner-text-items p{
+    font-size: 18px;
+    line-height: 2;
+}
+.main-content{
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    padding: 5%;
+}
+.main-content .main1{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 3%;
+    text-align: center;
+}
+.contact .contact-text .contact-items{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column;
+}
+.contact{
+    background-image: url('../images/joseph-barrientos-49318-unsplash.jpg');
+    background-size: cover;
+    padding: 80px 0;    
+    position: relative;
+    z-index: 1;
+}
+.contact::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.contact .contact-text .contact-items h2{
+    color: #fff;
+    margin-bottom: 18px;
+    font-size: 40px;
+}
+.contact .contact-text .contact-items input[type=text]{
+    width: 50%;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.contact .contact-text .contact-items textarea{
+    width: 50%;
+    border-radius: 10px;
+    height: 150px;
+    padding: 15px;
+}
+.contact .contact-text .contact-items a{
+    display: block;
+    background-color: #da4b29;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 80px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+.contact .contact-text .contact-items a:hover{
+    animation: hoverbackground 1s 1 ease-in-out;
+}
+@media all and (max-width: 500px){
+    .top-bar{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+    .top-bar .logo{
+        padding: 18px 0 0;
+    }
+    .top-bar .menu  ul{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .top-bar .menu ul li{
+        padding: 5px;
+    }
+    .banner .banner-text .banner-text-items{
+        width: 100%;
+    }
+    .banner .banner-text .banner-text-items h2{
+        font-size: 1.5em;
+    }
+    .main-content{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .contact{
+        padding: 40px;
+    }
+    .contact .contact-text .contact-items input[type=text]{
+        width: 100%;
+    }
+    .contact .contact-text .contact-items textarea{
+        width: 100%;
+    }
+}
+@keyframes hoverbackground{
+    0%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}

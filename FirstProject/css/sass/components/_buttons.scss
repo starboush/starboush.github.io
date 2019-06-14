@@ -1,0 +1,16 @@
+.main-button {
+    background-color: rgba($color: $redColor, $alpha: 0.8);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    min-width: 120px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    @include prefixer(transition, 1s all , webkit moz);
+    &:hover{
+        background-color: $redColor;
+    }
+}

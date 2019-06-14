@@ -1,0 +1,101 @@
+footer {
+    background-color: #123;
+    overflow-x: hidden;
+    padding-top: 30px;
+    margin-top: 50px;
+    border-top: 1px solid rgba($greyColor, 0.1);
+    .blog-section, .info, .contact{
+        float: $float-left;
+    }
+    .blog-section {
+        width: 50%;
+        .blog-box {
+            overflow: hidden;
+            margin-bottom: 20px;
+            @include prefixer(border-radius, 5px, webkit moz);
+            img {
+                float: $float-left;
+                width: 150px;
+                height: 150px;
+                @include prefixer(border-radius, 5px, webkit moz);
+                @include prefixer(box-shadow, 0px 0px 12px 1px rgba($greyColor, 0.1));
+            }
+            .text-container {
+                float: $float-left;
+                margin-right: 15px;
+                margin-left: 15px;
+                width: calc(100% - 190px);
+                h4 {
+                    color: $redColor;
+                    margin: 8px 0px;
+                }
+                p{
+                    color: #888;
+                    line-height: 1.7;
+                }
+            }
+        }
+    }
+    .info{
+        width: 25%;
+        padding: 0 10px;
+        ul{
+            color: #888;
+            line-height: 2;
+            li {
+                span {
+                    color: $redColor;
+                }
+            }
+        }
+        h4 {
+            color: #888;
+            margin-bottom: 0;
+        }
+        p {
+            color: #888;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+    }
+    .contact{
+        width: 25%;
+        input[type='text'],
+        input[type='email'],
+        textarea {
+            border: 1px solid #c9c9c9;
+            padding: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+            color: #aaa;
+            border-radius: 5px;
+        }
+        textarea {
+            height: 160px;
+        }
+    }
+    .section-title {
+        color: #999;
+        font-weight: normal;
+    }
+    .copyright {
+        overflow: hidden;
+        border-top: 1px solid rgba($greyColor, 0.1);
+        padding: 15px 0;
+        .copy,
+        .auther{
+            float:$float-left;
+            width: 50%;
+            color: #888;
+            text-transform: capitalize;
+        }
+        .auther {
+            text-align: $text-right;
+            span {
+                color: $redColor;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+    }
+}

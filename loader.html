@@ -15,6 +15,7 @@
         }
         body{
             background-color: #123;
+            height: 1000px;
         }
         .container{
             position: relative;
@@ -170,6 +171,109 @@
                box-shadow: 0 0px 3px rgba(255, 255, 255, 0.1);
            }
         }
+        .scaling{
+            width: 100px;
+            border: 2px solid #000;
+            animation: scaling 1.5s infinite ease-in-out;
+            margin: 10px;
+        }
+        @keyframes scaling{
+            0%{
+                transform: scaleX(2) translateY(0) skewX(2);
+            }
+            50%{
+                transform: scaleX(5) translateY(-15px);
+            }
+            100%{
+                transform: scaleX(1.2) translateY(0);
+            }
+        }
+        .rotating{
+            position: relative;
+            top: -400px;
+            width: 450px;
+            height: 150px;
+            background-color: #ff0;
+            margin: 0 auto;
+            transition: all 0.5s ease-in-out;
+            transform-origin: 10px 10px;
+            
+        }
+        .rotating{
+            animation: drop 0.5s 1 ease-in-out forwards,
+                        rotating 2s 3s 1 ease-in-out forwards;
+        }
+        @keyframes rotating{
+            0%{
+                transform: translateY(350px) rotateZ(0deg);
+            }
+            50%{
+                transform: translateY(350px) rotateZ(90deg);
+            }
+            60%{
+                transform: translateY(350px) rotateZ(55deg);
+            }
+            70%{
+                transform: translateY(350px) rotateZ(90deg)
+            }
+            80%{
+                transform: translateY(350px) rotateZ(63deg);
+            }
+            100%{
+                transform: translateY(350px) rotateZ(70deg);
+            }
+        }
+        @keyframes drop{
+            0%{
+                transform: rotateZ(0deg);
+                opacity: 0;
+            }
+            70%{
+                transform: translateY(450px);
+            }
+            100%{
+                transform: translateY(350px);
+                opacity: 1;
+
+            }
+        }
+        .viberate{
+            width: 250px;
+            height: 200px;
+            background-color: #00f;
+            transition: all 2s ease-in-out;
+        }
+        .viberate:hover{
+            animation: viberation 0.5s 1 ease-in-out
+        }
+        @keyframes viberation{
+            0%{
+                transform: translateX(40px);
+                opacity: 0;
+            }
+            25%{
+                transform: translateX(-20px);
+                opacity: 1;
+            }
+            50%{
+                transform: translateX(60px);
+                opacity: 1;
+            }
+            75%{
+                transform: translateX(-10px);
+                opacity: 0;
+            }
+            100%{
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        input[type='text']:disabled{
+            background-color: #ff0;
+        }
+        input[type='checkbox']:checked{
+            visibility: hidden
+        }
     </style>
 </head>
 <body>
@@ -182,7 +286,7 @@
     </div>
     <div class="social">
         <div class="box"><i class="fab fa-youtube"></i></div>
-        <a href="#">Starboush</a>
+        <a href="https://www.youtube.com/channel/UCeGPhKYSt1aG7pUFUx48X_w?view_as=subscriber" target="_blank">Starboush</a>
     </div>
     <div class="snake">
         <span></span>
@@ -191,5 +295,23 @@
         <span></span>
         <span></span>
     </div>
+    <!--<div class="scaling">
+
+    </div>
+    <div class="scaling">
+    
+    </div>
+    <div class="scaling">
+    
+    </div>-->
+    <div class="rotating">
+
+    </div>
+    <div class="viberate">
+
+    </div>
+    <input type="text" name="text1" id="text1" disabled>
+    <input type="checkbox" name="check" id="check" checked >
+    <label for="check">Checkbox</label>
 </body>
 </html>

@@ -1,0 +1,11 @@
+/* import files depend on what we need to use in the style layouts*/
+@import 'sass/helpers/variables';
+@import 'sass/helpers/mixins';
+@import 'sass/pages/globalpage';
+@import 'sass/components/heading';
+@import 'sass/components/buttons';
+
+@import 'sass/layout/grid';
+@import 'sass/layout/header';
+@import 'sass/pages/home';
+@import 'sass/layout/footer';
