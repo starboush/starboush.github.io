@@ -11,6 +11,9 @@
     }
     img {
         max-width: 100%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .bullets {
         cursor: none;
@@ -79,9 +82,13 @@
         width: (100% / 2);
         font-size: 14px;
         padding: 0 10px;
+        margin-bottom: 30px;
     }
     @media #{$medScreen} {
         width: (100% / 4);
+    }
+    @media #{$maxMobile}{
+        margin-bottom: 30px;
     }
     .player-img{
         max-width: 100%;
@@ -112,19 +119,33 @@
 /* Strat Our Products Style */
 
 .product-box{
-    float: $float-left;
-    width: (94% / 3);
-    
+    @media #{$minScreen} {
+        float: $float-left;
+        width: (94% / 3);
+    }
+    @media #{$maxMobile} {
+        margin-bottom: 15px;
+    }
     &:not(:last-of-type){
         margin-right: 3%;
+        @media #{$maxMobile} {
+            margin-right: 0%;
+        }
     }
     img{
-        max-width: 100%;
-        width: 300px;
-        height: 200px;
         background-size: cover;
         border-radius: 5px;
         box-shadow: 5px 5px 5px #123;
+        @media #{$minScreen} {
+            max-width: 100%;
+            width: 300px;
+            height: 200px;
+            
+        }
+        @media #{$maxMobile} {
+            width: 80%;
+            margin-bottom: 15px;
+        }
     }
 }
 /* End Our Products Style*/
