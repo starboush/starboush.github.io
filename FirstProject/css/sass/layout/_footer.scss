@@ -66,6 +66,9 @@ footer {
             color: #888;
             margin-top: 8px;
             margin-bottom: 8px;
+            @media #{$maxMobile} {
+                font-size: 15px;
+            }
         }
     }
     .contact{
@@ -82,7 +85,7 @@ footer {
             padding: 10px;
             margin-bottom: 15px;
             width: 100%;
-            color: #aaa;
+            color: #123;
             border-radius: 5px;
         }
         textarea {

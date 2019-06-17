@@ -345,6 +345,9 @@ footer {
       color: #888;
       margin-top: 8px;
       margin-bottom: 8px; }
+      @media (max-width: 767px) {
+        footer .info p {
+          font-size: 15px; } }
   @media (min-width: 768px) {
     footer .contact {
       width: 50%; } }
@@ -358,7 +361,7 @@ footer {
     padding: 10px;
     margin-bottom: 15px;
     width: 100%;
-    color: #aaa;
+    color: #123;
     border-radius: 5px; }
   footer .contact textarea {
     height: 160px; }
