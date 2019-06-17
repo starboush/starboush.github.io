@@ -322,8 +322,7 @@ footer {
       float: left;
       margin-right: 15px;
       margin-left: 15px;
-      width: calc(100% - 190px);
-      word-wrap: break-word; }
+      width: calc(100% - 190px); }
       footer .blog-section .blog-box .text-container h4 {
         color: #e2494c;
         margin: 8px 0px; }
@@ -333,7 +332,7 @@ footer {
         @media (max-width: 767px) {
           footer .blog-section .blog-box .text-container p {
             font-size: 12px;
-            width: 365px; } }
+            width: 225px; } }
   footer .info {
     padding: 0 10px; }
     @media (min-width: 768px) {
