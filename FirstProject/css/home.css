@@ -314,6 +314,10 @@ footer {
       -moz-border-radius: 5px;
       border-radius: 5px;
       box-shadow: 0px 0px 12px 1px rgba(156, 156, 156, 0.1); }
+      @media (max-width: 767px) {
+        footer .blog-section .blog-box img {
+          width: 110px;
+          height: 110px; } }
     footer .blog-section .blog-box .text-container {
       float: left;
       margin-right: 15px;
@@ -325,6 +329,9 @@ footer {
       footer .blog-section .blog-box .text-container p {
         color: #888;
         line-height: 1.7; }
+        @media (max-width: 767px) {
+          footer .blog-section .blog-box .text-container p {
+            font-size: 15px; } }
   footer .info {
     padding: 0 10px; }
     @media (min-width: 768px) {
@@ -345,9 +352,6 @@ footer {
       color: #888;
       margin-top: 8px;
       margin-bottom: 8px; }
-      @media (max-width: 767px) {
-        footer .info p {
-          font-size: 15px; } }
   @media (min-width: 768px) {
     footer .contact {
       width: 50%; } }
