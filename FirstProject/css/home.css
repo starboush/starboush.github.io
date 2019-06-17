@@ -294,36 +294,45 @@ footer {
   border-top: 1px solid rgba(156, 156, 156, 0.1); }
   footer .blog-section, footer .info, footer .contact {
     float: left; }
-  footer .blog-section {
-    width: 50%; }
-    footer .blog-section .blog-box {
-      overflow: hidden;
-      margin-bottom: 20px;
+  @media (min-width: 768px) {
+    footer .blog-section {
+      width: 100%; } }
+  @media (min-width: 992px) {
+    footer .blog-section {
+      width: 50%; } }
+  footer .blog-section .blog-box {
+    overflow: hidden;
+    margin-bottom: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+    footer .blog-section .blog-box img {
+      float: left;
+      width: 150px;
+      height: 150px;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
-      border-radius: 5px; }
-      footer .blog-section .blog-box img {
-        float: left;
-        width: 150px;
-        height: 150px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-        box-shadow: 0px 0px 12px 1px rgba(156, 156, 156, 0.1); }
-      footer .blog-section .blog-box .text-container {
-        float: left;
-        margin-right: 15px;
-        margin-left: 15px;
-        width: calc(100% - 190px); }
-        footer .blog-section .blog-box .text-container h4 {
-          color: #e2494c;
-          margin: 8px 0px; }
-        footer .blog-section .blog-box .text-container p {
-          color: #888;
-          line-height: 1.7; }
+      border-radius: 5px;
+      box-shadow: 0px 0px 12px 1px rgba(156, 156, 156, 0.1); }
+    footer .blog-section .blog-box .text-container {
+      float: left;
+      margin-right: 15px;
+      margin-left: 15px;
+      width: calc(100% - 190px); }
+      footer .blog-section .blog-box .text-container h4 {
+        color: #e2494c;
+        margin: 8px 0px; }
+      footer .blog-section .blog-box .text-container p {
+        color: #888;
+        line-height: 1.7; }
   footer .info {
-    width: 25%;
     padding: 0 10px; }
+    @media (min-width: 768px) {
+      footer .info {
+        width: 50%; } }
+    @media (min-width: 992px) {
+      footer .info {
+        width: 25%; } }
     footer .info ul {
       color: #888;
       line-height: 2; }
@@ -336,26 +345,31 @@ footer {
       color: #888;
       margin-top: 8px;
       margin-bottom: 8px; }
-  footer .contact {
-    width: 25%; }
-    footer .contact input[type='text'],
-    footer .contact input[type='email'],
-    footer .contact textarea {
-      border: 1px solid #c9c9c9;
-      padding: 10px;
-      margin-bottom: 15px;
-      width: 100%;
-      color: #aaa;
-      border-radius: 5px; }
-    footer .contact textarea {
-      height: 160px; }
+  @media (min-width: 768px) {
+    footer .contact {
+      width: 50%; } }
+  @media (min-width: 992px) {
+    footer .contact {
+      width: 25%; } }
+  footer .contact input[type='text'],
+  footer .contact input[type='email'],
+  footer .contact textarea {
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    color: #aaa;
+    border-radius: 5px; }
+  footer .contact textarea {
+    height: 160px; }
   footer .section-title {
     color: #999;
     font-weight: normal; }
   footer .copyright {
     overflow: hidden;
     border-top: 1px solid rgba(156, 156, 156, 0.1);
-    padding: 15px 0; }
+    padding: 15px 0;
+    margin-top: 30px; }
     footer .copyright .copy,
     footer .copyright .auther {
       float: left;
