@@ -34,6 +34,7 @@ footer {
                 margin-right: 15px;
                 margin-left: 15px;
                 width: calc(100% - 190px);
+                word-wrap: break-word;
                 h4 {
                     color: $redColor;
                     margin: 8px 0px;
@@ -43,6 +44,7 @@ footer {
                     line-height: 1.7;
                     @media #{$maxMobile} {
                         font-size: 12px;
+                        width: 365px;
                     }
                 }
             }
